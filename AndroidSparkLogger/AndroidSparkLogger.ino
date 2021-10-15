@@ -47,9 +47,9 @@ void printval(int a)
   }
   Serial.print(a, HEX);
   if (scrpos == 19)
-    Serial.print(" < ");
+    Serial.print("  < ");
   else if (scrpos == 21) 
-    Serial.print(" > ");
+    Serial.print(" >  ");
   else
     Serial.print(" ");
 
