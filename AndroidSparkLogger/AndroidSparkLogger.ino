@@ -46,10 +46,14 @@ void printval(int a)
     Serial.print("0");
   }
   Serial.print(a, HEX);
-  if (scrpos == 19)
-    Serial.print("  < ");
-  else if (scrpos == 21) 
-    Serial.print(" >  ");
+  if (scrpos == 19) {
+    Serial.print(" << ");
+    scrpos++;
+  }
+  else if (scrpos == 22) {
+    Serial.print(" >> ");
+    scrpos++;
+  }
   else
     Serial.print(" ");
 
