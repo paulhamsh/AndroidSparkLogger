@@ -1,4 +1,12 @@
-#include <M5Core2.h> 
+//#define M5_BRD
+#define HELTEC_BRD
+
+#ifdef M5_BOARD
+#include <M5Core2.h>
+#else
+#include "heltec.h"
+#endif
+ 
 #include "NimBLEDevice.h"
 
 #define C_SERVICE "ffc0"
@@ -142,6 +150,7 @@ int i;
 
 void setup() {
   // put your setup code here, to run once:
+#ifdef M5_BOARD
   M5.begin();
   M5.Lcd.fillScreen(TFT_BLACK);
   M5.Lcd.setTextSize(4);
@@ -149,6 +158,12 @@ void setup() {
   M5.Lcd.println("-------------");
   Serial.println("Started");
   M5.Lcd.setTextSize(3);
+#else
+  Heltec.begin(true /*DisplayEnable Enable*/, false /*LoRa Enable*/, true /*Serial Enable*/);
+  Heltec.display->clear();
+  Heltec.display->drawString(0, 0, "   Logger");
+  Heltec.display->display();
+#endif
 
   triggered_to_app = false;
   triggered_to_amp = false;
@@ -229,7 +244,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+#ifdef M5_BOARD
   M5.update();
+#endif
+  
 
   if (triggered_to_amp) {
     triggered_to_amp = false;
