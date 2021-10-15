@@ -1,5 +1,5 @@
-# AndroidSparkLogger
-Logs interactions between App on Android and Spark amp
+# SparkLogger
+Logs interactions between App on Android or IOS and Spark amp
 
 Ensure serial monitor is on!
 
