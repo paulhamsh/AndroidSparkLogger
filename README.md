@@ -1,6 +1,9 @@
 # SparkLogger
 Logs interactions between App on Android or IOS and Spark amp
 
+IOS uses BLE throughout     
+Android uses Classic bluetooth to the app and BLE to the amp     
+
 Ensure serial monitor is on!
 
 Works with M5Stack Core and Heltec Wifi - change the #define to select the board
