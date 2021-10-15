@@ -1,13 +1,13 @@
 // Define your board name below for conditional compilation- currently supports M5Stack Core 2 and Heltec WIFI
 
-#define M5_BOARD
-//#define HELTEC_BOARD
+//#define M5_BOARD
+#define HELTEC_BOARD
 
 
 #ifdef M5_BOARD
 #include <M5Core2.h>
 #else
-#include "Heltec.h"
+#include "heltec.h"
 #endif
  
 #include "BLEDevice.h"
