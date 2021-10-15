@@ -13,9 +13,9 @@ Spark connected
 Available for app to connect...
 
 Write to spark:     01 FE 00 00 53 FE 17 00 00 00 00 00 00 00 00 00 
-                    F0 01 01 00 02_2F F7_
+                    F0 01 01 00_02_2F_F7
 Write to app:       01 FE 00 00 41 FF 1D 00 00 00 00 00 00 00 00 00 
-                    F0 01 01 77 03_2F 11_4E 01 04 03 2E F7 
+                    F0 01 01 77_03_2F_11 4E 01 04 03 2E F7 
 Write to spark:     01 FE 00 00 53 FE 17 00 00 00 00 00 00 00 00 00 
                     F0 01 02 00 02_2F F7_
 Write to app:       01 FE 00 00 41 FF 1D 00 00 00 00 00 00 00 00 00 
