@@ -6,7 +6,7 @@ Android uses Classic bluetooth to the app and BLE to the amp
 
 Ensure serial monitor is on!
 
-Works with M5Stack Core and Heltec Wifi - change the #define to select the board
+Works with M5Stack Core2 and Heltec Wifi - change the #define to select the board
 
 Things in <<  >> are *likely* to be commands - unless they are part of a resposne to a preset request (0x0201) , in which case they are rubbish
 So the example below goes:
