@@ -1,5 +1,5 @@
-//#define M5_BOARD
-#define HELTEC_BOARD
+#define M5_BOARD
+//#define HELTEC_BRD
 
 #ifdef M5_BOARD
 #include <M5Core2.h>
