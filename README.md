@@ -1,4 +1,8 @@
 # SparkLogger
+
+NOTE - for IOS use v2, v1 seems to drop packets especially with the new firmware
+
+
 Logs interactions between App on Android or IOS and Spark amp
 
 IOS uses BLE throughout     
